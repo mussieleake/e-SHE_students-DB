@@ -1,0 +1,18 @@
+{
+    "name": "eshe/esheproject",
+    "require": {
+ "php": "^8.4",        
+"laravel/framework": "^11.30.0",
+        "monolog/monolog": "^3.7",
+        "guzzlehttp/guzzle": "^7.9",
+        "fakerphp/faker": "^1.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eshe\\Esheproject\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "version": "1.0.0"
+}
