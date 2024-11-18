@@ -1,47 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import Layout from "./components/shared/Layout";
+import Dashboard from "./components/Dashboard";
+import Student from "./components/Student";
+import Course from "./components/Course";
+import Setting from "./components/Setting";
+import Login from "./components/Login";
+import StudentData from "./components/StudentData";
+import Enrollment from "./components/Enrollment";
 function App() {
-    // State for storing users
-    const [users, setUsers] = useState([]);
+  return (
+    <Router>
 
-    // Fetch users from Laravel API
-    useEffect(() => {
-        axios.get('http://127.0.0.1:8000/api/users')
-            .then(response => {
-                setUsers(response.data);
-            })
-            .catch(error => {
-                console.error('There was an error fetching the data!', error);
-            });
-    }, []);
-
-    return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>Edit <code>src/App.js</code> and save to reload.</p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
-
-            <h1>Users List</h1>
-            <ul>
-                {users.map(user => (
-                    <li key={user.id}>{user.name}</li>
-                ))}
-            </ul>
-        </div>
-    );
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="/student" element={<Student/>} />
+          <Route path="/course" element={<Course/>} />
+          <Route path="/setting" element ={<Setting/>}/>
+          <Route path="/studentRecord" element ={<StudentData/>}/>
+          <Route path="/enrollment" element ={<Enrollment/>}/>
+        </Route>
+        <Route path="/" element={<div>this is login out of nested</div>}/>
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
-
