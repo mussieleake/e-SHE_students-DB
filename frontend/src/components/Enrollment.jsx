@@ -21,7 +21,7 @@ const TransactionChart = () => {
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
                     <YAxis />
-                    <Tooltip />
+                    <Tooltip/>
                     <Legend />
                     <Bar dataKey="Male" fill="#0ea5e9" />
                     <Bar dataKey="Female" fill="#ea580c" />
