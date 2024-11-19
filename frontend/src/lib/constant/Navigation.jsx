@@ -10,7 +10,7 @@ export const DASHBORD_SIDER_LINKS = [
     {
         key: 'institutions',
         label: "Institutions",
-        path: '/instituions',
+        path: '/institutions',
         icon: <HiOutlineCog />
     },
     {
@@ -25,13 +25,13 @@ export const DASHBORD_SIDER_LINKS = [
         path: '/enrollment',
         icon: <HiOutlineCog />
     },
-    {
-        key: 'student',
-        label: "Student",
-        path: '/student',
-        icon:<HiOutlineCube/>
+    // {
+    //     key: 'student',
+    //     label: "Student",
+    //     path: '/student',
+    //     icon:<HiOutlineCube/>
       
-    },
+    // },
 ]
 export const DASHBOARD_SIDEBAR_BOTTOM_LINKS=[
     {

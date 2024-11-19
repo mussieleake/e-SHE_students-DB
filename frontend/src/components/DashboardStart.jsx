@@ -31,21 +31,21 @@ const DashboardStart = () => {
           </div>
         </div>
       </BorderWraper>
-      {/* <BorderWraper> <div className='rounded-full h-12 w-12 items-center justify-center flex bg-sky-500'>
+      <BorderWraper> <div className='rounded-full h-12 w-12 items-center justify-center flex bg-purple-900'>
           <HiOutlineAcademicCap className='text-2xl text-white ' />
         </div>
         <div className='pl-4'>
-          <span className='text-sm text-gray-400 font-light '>Total Student</span>
+          <span className='text-sm text-gray-400 font-light '>Blind</span>
           <div className='flex items-center '>
             <strong className='text-xl text-gray-700 font-semibold'>$2889</strong>
             <span className='text-sm text-green-500 pl-2'>+22</span>
           </div>
-        </div></BorderWraper> */}
+        </div></BorderWraper>
       <BorderWraper> <div className='rounded-full h-12 w-12 items-center justify-center flex bg-red-500'>
           <HiOutlineAcademicCap className='text-2xl text-white ' />
         </div>
         <div className='pl-4'>
-          <span className=' text-gray-900 font-light '>Disablitiy</span>
+          <span className=' text-sm text-gray-900 font-light '>Deaf</span>
           <div className='flex items-center '>
             <strong className='text-xl text-gray-700 font-semibold'>$2889</strong>
             <span className='text-sm text-green-500 pl-2'>+22</span>

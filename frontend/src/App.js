@@ -7,6 +7,7 @@ import Setting from "./components/Setting";
 import Login from "./components/Login";
 import StudentData from "./components/StudentData";
 import Enrollment from "./components/Enrollment";
+import Institutions from "./components/Institutions";
 function App() {
   return (
     <Router>
@@ -19,6 +20,7 @@ function App() {
           <Route path="/setting" element ={<Setting/>}/>
           <Route path="/studentRecord" element ={<StudentData/>}/>
           <Route path="/enrollment" element ={<Enrollment/>}/>
+          <Route path="/institutions" element ={<Institutions/>}/>
         </Route>
         <Route path="/" element={<div>this is login out of nested</div>}/>
       </Routes>
